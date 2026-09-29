@@ -1,0 +1,12 @@
+nav.nav-primary{
+    ul{
+        @include reset-list();
+        gap: 50px;
+        a {
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+}
+
+

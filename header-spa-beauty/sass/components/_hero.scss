@@ -1,0 +1,30 @@
+.hero {
+    width: 809px;
+    margin-top: 100px;
+    ul{
+        @include reset-list();
+        font-size: 18px;
+        gap: 32px;
+        margin-top: 56px;
+        margin-bottom: 90px;
+    }
+    .button-watch{
+        gap: 16px;
+    } 
+    .watch{
+        @include reset-list();
+        gap: 5px;
+    }
+    .play-button{
+        @include reset-list();
+        width: 48px;
+        height: 48px;
+        background-color: $color-background;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,34 @@
+.testimonial{
+    width: 375px;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    color: $color-primary;
+    &:before{
+        content: "“";
+        font-size: 84px;
+        line-height: 0.8;
+        display: block;
+        margin-bottom: 0;
+    }
+    p{
+    color: $color-testimonial;
+    margin-top: -30px;
+    }
+    &.testimonial-one{
+        position: absolute;
+        top: 435px;
+        left: 1449px;
+    }
+    &.testimonial-two{
+        position: absolute;
+        top: 747px;
+        left: 1309px;
+    }
+}
+
+
+
+

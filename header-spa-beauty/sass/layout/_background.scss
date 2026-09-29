@@ -1,0 +1,25 @@
+.page-background{ 
+  width: $max-width-container; 
+  position: relative; 
+ 
+  background-image:    
+    url("../img/beauty-woman-skin-care-beautiful-female-hand-touch-8B5MWG9 1.webp"), 
+    url("../img/Vector.svg"), 
+    linear-gradient( 
+    to right, 
+    $color-background-special 0 67%,
+    $color-secondary 67% 100%
+  ); 
+ 
+  background-size:  
+    80%,    /* women */ 
+    28%,    /* vector */ 
+    100% 820px; /* gradient */ 
+ 
+  background-repeat: no-repeat; 
+ 
+  background-position: 
+    90% 70px, 
+    85% 20%, 
+    top left; 
+}
