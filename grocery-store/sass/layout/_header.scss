@@ -1,0 +1,21 @@
+/*CSS - Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    .sign{
+        ul{
+            @include reset-list();
+            gap: 40px;
+        }
+    }
+}
+
+
+
+
+  
+
+
+

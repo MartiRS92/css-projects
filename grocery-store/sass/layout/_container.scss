@@ -1,0 +1,23 @@
+.container{
+    max-width: $max-width-container;
+    width: 100%;
+    min-height: $min-height;
+    padding: $padding-container;
+
+
+  background-image:   
+    url("../img/delivery-concept-handsome-african-american-deliver-AZUZTZ3\ 1-Photoroom.png"),
+    url("../img/rectangle_red.svg"),
+    url("../img/rectangle_yellow.svg");
+
+  background-size: 
+    58%,    /* hombre */
+    400px,  /* naranja */
+    400px;  /* amarillo */
+  background-repeat: no-repeat;
+
+  background-position:
+    90% 10%,
+    80% 40%,
+    70% 30%;
+}

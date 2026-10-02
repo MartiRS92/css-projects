@@ -1,376 +1,79 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
   padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
-/*Proyecto CSS*/
-
-:root {
-  --color-primary: #F26343;
-  --color-yellow: #F2AE00;
-
-  --color-text: #000;
-  --color-subtext: #9b9a98;
-  --color-background: #fff;
-  --color-search: #f4f4f4b0;
-
-  --primary-font: "Poppins", sans-serif; 
-  --secondary-font: "Roboto Slab", serif; 
-
-}
-
-.container{
-  max-width: 1300px;
-  margin-inline: auto;
-  font-family: var(--primary-font);
-
-  background-image:   
-    url("../img/delivery-concept-handsome-african-american-deliver-AZUZTZ3\ 1-Photoroom.png"),
-    url("../img/rectangle_red.svg"),
-    url("../img/rectangle_yellow.svg");
-
-  background-size: 
-    65%,    /* hombre */
-    400px,  /* naranja */
-    350px;  /* amarillo */
-  background-repeat: no-repeat;
-
-  background-position:
-    90% 10%,
-    80% 50%,
-    70% 35%;
-}
-
-/*CSS - Header*/
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav_principal ul{
-  display: flex;
-  list-style: none;
-  gap: 50px;
-}
-
-.nav_principal ul li a{
-  color: var(--color-subtext);
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.nav_principal ul li a:hover{
-  color: var(--color-primary);
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 8px;
-}
-
-.sign ul{
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
-  font-size: 16px;
-}
-
-.sign-in{
-  color: var(--color-primary);
-}
-
-.sign-up{
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 15px;
-  transition: all .5s ease;
-}
-
-.sign-up:hover{
-  background-color: var(--color-background);
-  color: var(--color-primary);
-}
-
-
-/*CSS - Main*/
-
-.hero{
-  max-width: 55%;
-}
-
-.hero h1 {
+h1 {
   font-size: 68px;
   margin-top: 70px;
   margin-bottom: 0;
   line-height: 1.1;
-
 }
 
-.hero .groceries{
-  color: var(--color-primary);
+h3 {
+  font-weight: 400;
 }
 
-.hero p {
-  width: 80%;
-  color: var(--color-subtext);
-  font-size: 18px;
+a {
+  font-size: 16px;
+}
+
+p {
+  color: #9b9a98;
+  font-size: 16px;
   margin-block: 15px;
 }
 
-.search{
+.groceries {
+  color: #F26343;
+}
+
+.sign-in {
+  color: #F26343;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #F26343;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #F26343;
+}
+
+.products {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 75px;
+}
+
+.hero {
+  width: 50%;
+  padding-block: 20px;
+}
+.hero p {
+  max-width: 80%;
+  font-size: 18px;
+}
+.hero .search {
   display: flex;
   width: 70%;
-  background-color: var(--color-search);
+  background-color: rgba(244, 244, 244, 0.6901960784);
   border-radius: 8px;
   overflow: hidden;
 }
-
-.search input {
+.hero .search input {
   flex: 1;
   border: none;
   outline: none;
@@ -378,40 +81,74 @@ textarea {
   font-size: 18px;
   padding: 15px 20px;
 }
-
-.search button{
+.hero .search button {
   border: none;
-  background-color: var(--color-primary);
+  background-color: #F26343;
   padding: 15px 20px;
 }
-
-.features ul{
+.hero .features ul {
   display: grid;
-  list-style: none;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  justify-self: left;
+  margin-top: 40px;
   padding: 0;
-} 
-
-.features ul li{
-  color: var(--color-subtext);
-  font-size: 14px;
+  list-style: none;
+  color: #9b9a98;
 }
 
-.products {
+.nav_principal ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
-  padding: 0px;
-  gap: 10px;
-  margin-top: 100px;
+  align-items: center;
+  gap: 50px;
+}
+.nav_principal ul a {
+  color: #9b9a98;
+  text-decoration: none;
+  font-weight: 300;
+}
+.nav_principal ul a:hover {
+  color: #F26343;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 8px;
 }
 
-.products h3{
-  font-weight: 400;
+/*CSS - Header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.header .sign ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-.products p{
-  color: var(--color-subtext);
-  font-size: 16px;
-  margin: 10px;
+.container {
+  max-width: 1500px;
+  width: 100%;
+  min-height: 1080px;
+  padding: 32px 120px;
+  background-image: url("../img/delivery-concept-handsome-african-american-deliver-AZUZTZ3 1-Photoroom.png"), url("../img/rectangle_red.svg"), url("../img/rectangle_yellow.svg");
+  background-size: 58%, 400px, 400px; /* amarillo */
+  background-repeat: no-repeat;
+  background-position: 90% 10%, 80% 40%, 70% 30%;
 }
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

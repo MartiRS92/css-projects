@@ -1,0 +1,12 @@
+.sign-in{
+  color: $color-primary;
+}
+
+.btn{
+    @include button();
+    &:hover{
+        background-color: $color-background;
+        color: $color-primary;
+    }
+}
+
