@@ -27,6 +27,12 @@ p {
   color: #9A9A9A;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.5 ease, transform 0.3s ease;
+}
+
 .btn {
   display: inline-block;
   background-color: #2B4466;
@@ -48,11 +54,21 @@ p {
   text-decoration: none;
   padding: 20px 45px;
   border-radius: 40px;
+  transition: all 0.5s ease;
+}
+.button-book:hover {
+  background-color: #fff;
+  color: #2B4466;
 }
 
 .hero {
   width: 809px;
-  margin-top: 100px;
+  margin-top: 80px;
+}
+.hero p {
+  margin-top: 32px;
+  font-size: 24px;
+  width: 95%;
 }
 .hero ul {
   padding: 0;
@@ -66,26 +82,26 @@ p {
   margin-bottom: 90px;
 }
 .hero .button-watch {
-  gap: 16px;
-}
-.hero .watch {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 16px;
+  text-decoration: none;
+  color: #2B4466;
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+.hero .button-watch:hover {
+  opacity: 0.7;
 }
 .hero .play-button {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   background-color: #fff;
   border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .features {
@@ -108,11 +124,18 @@ p {
   padding: 32px;
   text-align: center;
 }
-.features img {
-  width: 70px;
-  height: 70px;
+.features .feature-icon {
+  width: 72px;
+  height: 72px;
   background-color: #A8D3CA;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .feature-icon img {
+  width: 56px;
+  height: 56px;
 }
 
 .testimonial {
@@ -155,8 +178,25 @@ nav.nav-primary ul {
   gap: 50px;
 }
 nav.nav-primary ul a {
+  display: inline-block;
   color: #2B4466;
-  text-decoration: none;
+}
+nav.nav-primary ul a:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+nav.nav-primary ul .more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav.nav-primary ul .more::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #2B4466;
+  border-bottom: 2px solid #2B4466;
+  transform: rotate(45deg) translateY(-2px);
 }
 
 header {
@@ -180,9 +220,14 @@ header .nav-icons ul {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-left: 300px;
 }
-header .botton-signin {
+header .button-signin {
   color: #2B4466;
+}
+header .button-signin:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
 }
 
 .container {
@@ -197,7 +242,7 @@ header .botton-signin {
   background-image: url("../img/beauty-woman-skin-care-beautiful-female-hand-touch-8B5MWG9 1.webp"), url("../img/Vector.svg"), linear-gradient(to right, #fbfaf7 0 67%, #A8D3CA 67% 100%);
   background-size: 80%, 28%, 100% 820px; /* gradient */
   background-repeat: no-repeat;
-  background-position: 90% 70px, 85% 20%, top left;
+  background-position: 90% 20px, 85% 20%, top left;
 }
 
 html * {

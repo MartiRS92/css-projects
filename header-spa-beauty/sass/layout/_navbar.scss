@@ -3,8 +3,27 @@ nav.nav-primary{
         @include reset-list();
         gap: 50px;
         a {
+            display: inline-block;
             color: $color-primary;
-            text-decoration: none;
+            &:hover {
+                opacity: .7;
+                transform: translateY(-2px);
+            }
+        }
+
+        .more {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-right: 2px solid $color-primary;
+                border-bottom: 2px solid $color-primary;
+                transform: rotate(45deg) translateY(-2px);
+            }
         }
     }
 }

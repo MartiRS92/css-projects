@@ -13,11 +13,16 @@ header{
     .nav-icons{
         ul {
             @include reset-list();
-            gap: 40px;  
+            gap: 40px; 
+            margin-left: 300px; 
         } 
     } 
-    .botton-signin{
+    .button-signin{
         color: $color-primary;
+        &:hover {
+            opacity: .7;
+            transform: translateY(-2px);
+        }
     }    
 }
 
