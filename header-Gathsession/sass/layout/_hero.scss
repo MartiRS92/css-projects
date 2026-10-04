@@ -1,0 +1,45 @@
+.hero{
+    width: 784px;
+    color: $color-text;
+    padding-block: 96px;
+
+    .subtext{
+        color: $color-text-muted;
+        font-size: 24px;
+        font-weight: 400;
+        width: 648px;
+        margin-top: 24px;
+    }
+    .action-buttons ul{
+        @include reset-list();
+        gap: 32px;
+        margin: 32px 0 144px;
+        .learn-more{
+            @include flex-center;
+            gap: 6px;
+            color: $color-text;
+            text-decoration: underline;
+            img {
+                display: block;
+            }
+            &:hover {
+            opacity: .7;
+            transform: translateX(3px);
+            }
+        }
+    }
+
+    .features{
+        @include flex-center;
+        justify-content: space-between;
+        width: 616px;
+        gap: 48px;
+        article{
+            @include flex-center();
+            gap: 16px;
+            .icon-container{
+                @include icon-container;
+            }
+        }
+    }
+}

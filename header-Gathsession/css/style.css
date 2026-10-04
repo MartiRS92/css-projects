@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 80px;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #DB2A6B;
+  color: #F8FAFC;
+  text-decoration: none;
+  padding: 16px 68px;
+  border-radius: 16px 16px 16px 0px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: #2a2d38;
+  color: #DB2A6B;
+}
+
+.nav-principal ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.nav-principal ul a {
+  display: inline-block;
+  color: #94959b;
+  position: relative;
+}
+.nav-principal ul a:hover {
+  color: #F8FAFC;
+}
+.nav-principal ul a:hover::before {
+  width: 42px;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #DB2A6B;
+  border-radius: 10px;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1920px;
+  min-height: 1080px;
+  padding: 37px 160px;
+}
+
+.hero {
+  width: 784px;
+  color: #F8FAFC;
+  padding-block: 96px;
+}
+.hero .subtext {
+  color: #94959b;
+  font-size: 24px;
+  font-weight: 400;
+  width: 648px;
+  margin-top: 24px;
+}
+.hero .action-buttons ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 32px 0 144px;
+}
+.hero .action-buttons ul .learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #F8FAFC;
+  text-decoration: underline;
+}
+.hero .action-buttons ul .learn-more img {
+  display: block;
+}
+.hero .action-buttons ul .learn-more:hover {
+  opacity: 0.7;
+  transform: translateX(3px);
+}
+.hero .features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 616px;
+  gap: 48px;
+}
+.hero .features article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.hero .features article .icon-container {
+  background-color: #464751;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+.hero .features article .icon-container img {
+  object-fit: contain;
+  display: block;
+}
+
+.page-background {
+  width: 1920px;
+  position: relative;
+  background-image: url("../img/content.png");
+  background-repeat: no-repeat;
+  background-position: 971px 174px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2a2d38;
+}
+
+/*# sourceMappingURL=style.css.map */

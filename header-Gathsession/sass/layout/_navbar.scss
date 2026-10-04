@@ -1,0 +1,25 @@
+.nav-principal{
+    ul{
+        @include reset-list();
+        gap: 48px;
+                a {
+                    display: inline-block;
+                    color: $color-text-muted;
+                    position: relative;
+                    &:hover {
+                        color: $color-text;
+                        &::before {
+                            width: 42px;
+                            height: 4px;
+                            content:"";
+                            position: absolute;
+                            background-color: $color-accent;
+                            border-radius: 10px;
+                            bottom: -14px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }

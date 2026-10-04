@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #DB2A6B;
+  color: #F8FAFC;
+  text-decoration: none;
+  padding: 16px 68px;
+  border-radius: 16px 16px 16px 0px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: #2a2d38;
+  color: #DB2A6B;
+}
+
+.nav-principal ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.nav-principal ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: #94959b;
+}
+.nav-principal ul a:hover {
+  color: #F8FAFC;
+  transform: translateY(-2px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1920px;
+  min-height: 1080px;
+  padding: 37px 160px;
+}
+
+.hero {
+  width: 784px;
+  display: flex;
+  color: #F8FAFC;
+  padding-block: 96px;
+  gap: 27px;
+}
+.hero .subtext {
+  color: #94959b;
+  font-size: 24px;
+  font-weight: 400;
+  width: 648px;
+}
+.hero .action-buttons ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 32px 0 144px;
+}
+.hero .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+.hero .features article {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero .features article .icon-container {
+  background-color: #464751;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+.hero .features article .icon-container img {
+  object-fit: contain;
+}
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #2a2d38;
+}
+
+/*# sourceMappingURL=app.css.map */
