@@ -1,0 +1,44 @@
+.gallery{
+    .img{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__main__image{
+        width: 343px;
+        height: 320px;
+    }
+    &__title{
+        font-size: 50px;
+        padding-top: 25px;
+        width: 80%;
+    }
+    &__subtitle{
+        padding-top: 21px;
+    }
+
+    &__image-main{
+        width: 343px;
+        height: 480px;
+        padding-top: 32px;
+    }
+    &__image-sidebar{
+        width: 343px;
+        height: 200px; 
+        padding-block: 16px;     
+    }
+
+    &__info{
+        background-color: $color-black;
+        color: $color-white;
+        padding: 48px 24px;
+        .gallery__grid__title{
+            font-size: 50px;
+            width: 90%;
+        }
+        .gallery__grid__subtitle{
+            color: $color-white;
+            padding-top: 24px;
+        }
+    }
+}

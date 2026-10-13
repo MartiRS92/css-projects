@@ -1,0 +1,29 @@
+.location{
+
+    background-color: $color-black;
+    color: $color-white;
+    &__title{
+        font-size: 50px;
+        font-weight: 900;
+        padding-block: 16px;
+    }   
+    &__address{
+        margin-top: 32px;
+        font-style: normal;
+        line-height: 28px;
+        font-weight: 400;
+
+        &__street{   
+        color: $color-gold;
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    } 
+    }
+    &__info{
+        color: $color-white;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+}

@@ -1,0 +1,102 @@
+@mixin breakpoint($point) {
+  @if $point == largedesktop {
+    @media (max-width: 1920px) and (min-width: 1441px) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media (max-width: 1440px) and (min-width: 1025px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: 1024px) and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == tabletmobile {
+    @media (max-width: 1024px) and (min-width: 320px) {
+      @content;
+    }
+  } @else if $point == mobileandrotate {
+    @media (max-width: 767px) and (min-width: 320px) {
+      @content;
+    }
+  } @else if $point == mobilerotate {
+    @media (max-width: 767px) and (min-width: 479px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: 480px) and (min-width: 320px) {
+      @content;
+    }
+  } @else if $point == smallmobile {
+    @media (max-width: 650px) and (min-width: 568px) {
+      @content;
+    }
+  } @else if $point == rotate {
+    @media (max-height: 550px) and (min-height: 0) {
+      @content;
+    }
+  }
+}
+
+//Mixins para resoluciones
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+}
+
+//Mixins reutilizables
+@mixin reset-list(){
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin button($bg-color: $color-black, $color: $color-white) {
+  display: inline-block;
+  padding: 24px 32px;
+  color: $color;
+  background: $bg-color;
+  font-size: 20px;
+  font-family: $font-heading;
+  font-weight: 800;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@mixin icon-container(){
+  background: $color-gold;
+  width: 56px;
+  height: 72px;
+  
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-fit: contain;
+    display: block;
+  }
+}
