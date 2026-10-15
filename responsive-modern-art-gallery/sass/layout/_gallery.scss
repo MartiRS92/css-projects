@@ -1,26 +1,32 @@
 .gallery{
-    .img{
+
+    // ESTILOS GENERALES
+
+    img{
+        display: block;
+        width: 100%;
         object-fit: cover;
         object-position: center;
     }
-
+    
+    // MOBILE
+    &__main__content{
+        padding-block: 25px 32px;
+    }
     &__main__image{
-        width: 343px;
         height: 320px;
     }
     &__title{
         font-size: 50px;
-        padding-top: 25px;
         width: 80%;
     }
     &__subtitle{
-        padding-top: 21px;
+        color: $color-grey;
+        font-weight: 300;
     }
 
     &__image-main{
-        width: 343px;
         height: 480px;
-        padding-top: 32px;
     }
     &__image-sidebar{
         width: 343px;
@@ -41,4 +47,107 @@
             padding-top: 24px;
         }
     }
+
+        @include breakpoint(tablet) {
+        &__main{
+            padding-block: 60px 11px;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 30px;
+            margin: 0;
+            &__content{
+                padding: 36px 38px 65px 0px;
+                width: 40%;
+                flex-shrink: 0;
+            }
+        } 
+        &__main__image{
+            flex: 1;
+            width: 0;
+            min-width: 0;
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+
+        &__grid{
+            display: grid;
+            align-items: stretch;
+            grid-template-columns: 3fr 2fr;
+            gap: 11px;
+            margin-top: 0;
+        }
+        &__image-main{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__sidebar {
+            display: grid;
+            gap: 11px;
+        }
+        &__image-sidebar{
+            width: 100%;
+            height: 313px;
+            padding: 0;  
+        }
+
+        &__info {
+            padding: 85px 28px;
+            .gallery__grid__title{
+            width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint(desktop) {
+        &__main{
+            padding-block: 150px 30px;
+            gap: 32px;
+            &__content{
+                padding: 60px 125px 60px 0px;
+                width: 40%;
+                flex-shrink: 0;
+            }
+        }
+        &__main__image{
+            flex: 1;
+            width: 0;
+            min-width: 0;
+            height: auto;
+            aspect-ratio: 1.6 / 1;
+        }
+        &__title{
+            font-size: 60px;
+        }
+        &__subtitle{
+            font-size: 22px;
+        }
+        &__grid{
+            gap: 30px;
+            padding-bottom: 100px;
+        }
+        &__image-sidebar{
+            height: 325px;
+        }
+
+        &__info {
+            padding: 65px 47px 64px 48px;
+            .gallery__grid__title{
+                width: 100%;
+                font-size: 60px;
+            }
+            .gallery__grid__subtitle{
+               font-size: 22px;
+            }
+        }
+    }
+
+    
 }

@@ -2,7 +2,7 @@
     &__image {
     width: 100%;
     height: 550px;
-    background-image: url("../img/_img_location/Maps-location.jpg");
+    background-image: url("../img/_img_location/maps-location.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -36,6 +36,18 @@
             .map__button__icon{
                 background-color: $color-black;
             }
+        }
+    }
+
+    // TABLET
+    @include breakpoint(tablet) {
+        &__image {
+            width: 100%;
+            height: 600px;
+        }
+        &__button{
+            position: absolute;
+            left: +39px;
         }
     }
 }

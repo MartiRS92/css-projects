@@ -7,8 +7,12 @@ h1, h2, h3{
 p{
     font-family: $font-body;
     font-size: 18px;
-    font-weight: 400;
-    color: $color-grey;
+    font-weight: 300;
+
+    @include breakpoint(desktop) {
+        font-size: 22px;
+        font-weight: 300;
+    }
 }
 
 address{

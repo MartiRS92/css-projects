@@ -14,6 +14,36 @@
         text-decoration: none;
     }
 
+    //TABLET
+    @include breakpoint(tablet){
+        &__content{
+            padding-inline: 39px;
+            padding-block: 56px;
+            @include flex-center();
+            justify-content: space-between;
+        }
+        &__description{
+            width: 281px;
+            font-size: 16px;
+            font-weight: 300;
+        }  
+    }
+
+    //dESKTOP
+    @include breakpoint(desktop){
+        &__content{
+            padding: 80px 165px;
+            @include flex-center();
+            justify-content: space-between;
+        }
+        &__description{
+            width: 430px;
+            font-size: 18px;
+        }
+
+    
+    }
+
     // FOOTER HOME
     &--home {
         background-color: $color-black;
@@ -26,4 +56,5 @@
         color: $color-black;
     }    
     
+
 }
