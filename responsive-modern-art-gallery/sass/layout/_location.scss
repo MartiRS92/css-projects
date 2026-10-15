@@ -53,22 +53,12 @@
     }
 
     // DESKTOP
-        @include breakpoint(tablet) {
+        @include breakpoint(desktop) {
             padding-inline: 165px 164px;
 
             &__container{
-                display: grid;
-                grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
                 padding-block: 104px 128px;
-                gap: 68px;
             }
-            &__title{
-                font-size: 55px;
-            }
-            &__address{
-                font-weight: 300;
-            }
-
     }
 
 }

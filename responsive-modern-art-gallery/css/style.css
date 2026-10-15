@@ -99,7 +99,7 @@ address {
 .hero__image {
   width: 100%;
   height: 240px;
-  background-image: url("../img/_img_home/hero-image.png");
+  background-image: url("../img/img-home/hero-image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ address {
   .hero__image {
     width: 61%;
     height: 700px;
-    background-image: url("../img/_img_home/hero-image.png");
+    background-image: url("../img/img-home/hero-image.png");
     position: absolute;
     z-index: -1;
   }
@@ -182,7 +182,7 @@ address {
     background: linear-gradient(to right, #151515 33.33%, #FFFFFF 33.33%);
   }
   .hero__image {
-    background-image: url("../img/_img_home/hero-image.png");
+    background-image: url("../img/img-home/hero-image.png");
     position: absolute;
     top: 0;
     left: 33.33%;
@@ -199,7 +199,7 @@ address {
   }
   .hero__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -403,28 +403,19 @@ address {
     font-weight: 300;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .location {
     padding-inline: 165px 164px;
   }
   .location__container {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
     padding-block: 104px 128px;
-    gap: 68px;
-  }
-  .location__title {
-    font-size: 55px;
-  }
-  .location__address {
-    font-weight: 300;
   }
 }
 
 .map__image {
   width: 100%;
   height: 550px;
-  background-image: url("../img/_img_location/maps-location.jpg");
+  background-image: url("../img/img-location/maps-location.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
