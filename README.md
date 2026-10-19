@@ -4,6 +4,12 @@ A collection of HTML, CSS, and Sass projects developed during my Full Stack Deve
 
 This repository showcases my progress in front-end development, focusing on responsive layouts, modern CSS techniques, and reusable components.
 
+## 🎨 CSS Lab | Project Showcase
+
+Explore all my HTML, CSS, and Sass projects in one visual gallery.
+
+👉 **[Explore CSS Lab](https://martirs92.github.io/css-projects/css-lab/)**
+
 ## 🚀 Projects
 
 - Coworking Space — Coworking website layout.
