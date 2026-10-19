@@ -1,0 +1,11 @@
+.footer{
+    background-color: $color-sea;
+    padding-block: 36px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: 16px;
+    }
+}

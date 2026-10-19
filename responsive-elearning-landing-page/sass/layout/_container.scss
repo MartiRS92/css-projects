@@ -1,0 +1,18 @@
+.container{
+    padding-left: 16px;
+    padding-right: 16px; 
+    max-width: 1200px; 
+    margin-inline: auto;  
+
+    background-color: $color-gradient-background;
+    @include breakpoint(tablet){
+        padding-block: 4px;
+        padding-left: 40px;
+        padding-right: 40px; 
+    }   
+
+    @include breakpoint(desktop) {
+        padding-left: 144px;
+        padding-right: 144px;
+    }
+}

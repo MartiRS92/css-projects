@@ -1,0 +1,21 @@
+.button{
+    @include button(
+        $color-sea,
+        $color-white
+  );
+
+}
+
+.button--gradient-orange {
+  @include button(
+        $color-gradient-principal,
+        $color-white
+  );
+}
+
+.button-footer{
+    @include button(
+        $color-gradient-button, 
+        $color-white
+    );
+}

@@ -1,0 +1,27 @@
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 51px;
+    @include breakpoint(desktop){
+        font-size: 56px;
+    }
+}
+
+h2{
+    font-weight: 800;
+    color: $color-white;
+    line-height: 32px;
+}    
+
+h3 {
+    font-weight: 800;
+    color: $color-sea;
+}
+
+p{ 
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-grey;
+    line-height: 26px;
+}

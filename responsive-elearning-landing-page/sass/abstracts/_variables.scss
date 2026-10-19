@@ -1,0 +1,32 @@
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+
+// Colors
+
+$color-blue: #666CA3;
+$color-sea: #13183F;
+$color-grey: #83869A;
+$color-loli: #FFA7C3;
+$color-pink: #F74780;
+$color-white: #FFFFFF;
+$color-gradient-principal: linear-gradient(
+  180deg,
+  #FF6F48 0%,
+  #F02AA6 100%
+);
+
+$color-gradient-button: linear-gradient(
+  180deg,
+  #4851FF 0%,
+  #F02AA6 100%
+);
+
+$color-gradient-background: linear-gradient(
+  180deg,
+  #FFFFFF 0%,
+  #F0F1FF 100%
+);
+// Font
+$primary-font: "Plus Jakarta Sans", sans-serif;

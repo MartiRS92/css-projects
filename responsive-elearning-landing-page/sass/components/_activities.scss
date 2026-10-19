@@ -1,0 +1,66 @@
+.activities {
+  padding-bottom: 60px;
+  background: $color-gradient-background;
+
+  &__header {
+    background: $color-gradient-principal;
+    padding: 25px 29px 32px;
+    margin-top: 66px;
+    border-radius: 10px;
+    @include breakpoint(tablet){
+      padding: 56px 0px 139px 21px;
+      margin-bottom: 0;
+    }
+
+    @include breakpoint(desktop){
+      padding: 32px 0px 138px 32px;
+      margin-bottom: 0;
+    }
+    } 
+    & article {
+    padding-inline: 28px;
+    margin-block: 40px;
+    background: $color-white;
+    border-radius: 10px;
+    position: relative;
+    }
+
+    &__item-icon {
+    @include icon-container();
+    position: absolute;
+    top: -40px;
+    left: 28px;
+    margin-top: 16px;
+    }
+    & h3{
+    padding-top: 56px;   
+    }
+    & p{
+    margin-top: 16px;   
+    }
+    & span a{
+    @include reset-list;
+    text-decoration: none;
+    display: inline-block;
+    padding-block: 24px 32px;
+    color: $color-pink;
+    font-size: 18px;
+    }
+
+    .container{
+      @include breakpoint(tablet){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: stretch;
+      }
+    
+      @include breakpoint(desktop){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: stretch;
+      }
+    }
+
+}
