@@ -1,0 +1,21 @@
+.button{
+    @include button();
+    @include flex-center();
+    padding: 0;
+    color: $color-white;
+
+    text-decoration: underline;
+    line-height: 26px;
+    text-decoration-color: $color-green;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+
+    &:visited {
+        color: $color-white;
+        text-decoration-color: $color-green;
+    }
+
+    &:hover {
+        color: $color-green;
+    }
+}

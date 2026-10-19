@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    padding-inline: 16px;
+    margin-inline: auto;
+    box-sizing: border-box;
+
+    @include breakpoint(tablet) {
+        padding-inline: 30px;
+    }
+
+    @include breakpoint(desktop) {
+        padding-inline: 165px;
+    }
+}
